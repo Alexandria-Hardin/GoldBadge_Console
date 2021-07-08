@@ -5,11 +5,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{9C4483FB-CCA4-4669-A73D-D2FF183F707E}</ProjectGuid>
+    <ProjectGuid>{8C8F73F3-E745-42E3-9E75-062CC751E995}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>_01_CafeTest</RootNamespace>
-    <AssemblyName>01_CafeTest</AssemblyName>
+    <RootNamespace>ClaimTest</RootNamespace>
+    <AssemblyName>ClaimTest</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -53,16 +53,16 @@
     <Reference Include="System.Core" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CafeTest.cs" />
+    <Compile Include="ClaimTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01_Cafe\01_Cafe.csproj">
-      <Project>{4b7cb523-5b53-4aaa-b9d7-2dd705c28772}</Project>
-      <Name>01_Cafe</Name>
+    <ProjectReference Include="..\Claim\02_Claims.csproj">
+      <Project>{ed25fc29-14fb-42cd-a04f-4d5d4aceff61}</Project>
+      <Name>02_Claims</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets" Condition="Exists('$(VSToolsPath)\TeamTest\Microsoft.TestTools.targets')" />

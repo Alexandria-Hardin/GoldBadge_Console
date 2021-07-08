@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78570620-CC3E-47DF-B6BB-585FAC4B3815}</ProjectGuid>
+    <ProjectGuid>{49CE7421-A4A0-40E9-8F7B-11066F66BCD9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_CafeUI</RootNamespace>
-    <AssemblyName>01_CafeUI</AssemblyName>
+    <RootNamespace>_03_BadgeUI</RootNamespace>
+    <AssemblyName>03_BadgeUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -33,11 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="ConsoleTables, Version=2.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\ConsoleTables.2.4.2\lib\net40\ConsoleTables.dll</HintPath>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,18 +44,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ConsoleTable.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="ProgramUI.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-    <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01_Cafe\01_Cafe.csproj">
-      <Project>{4b7cb523-5b53-4aaa-b9d7-2dd705c28772}</Project>
-      <Name>01_Cafe</Name>
+    <ProjectReference Include="..\Badge\03_Badge.csproj">
+      <Project>{F7E82C0A-A09C-42A3-B253-9777B6DABCF5}</Project>
+      <Name>03_Badge</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

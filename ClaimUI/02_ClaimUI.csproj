@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{78570620-CC3E-47DF-B6BB-585FAC4B3815}</ProjectGuid>
+    <ProjectGuid>{CF0DE42A-44CB-46AB-AD24-9EBACFA7CCF9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>_01_CafeUI</RootNamespace>
-    <AssemblyName>01_CafeUI</AssemblyName>
+    <RootNamespace>ClaimUI</RootNamespace>
+    <AssemblyName>ClaimUI</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -38,6 +38,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -55,9 +56,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\01_Cafe\01_Cafe.csproj">
-      <Project>{4b7cb523-5b53-4aaa-b9d7-2dd705c28772}</Project>
-      <Name>01_Cafe</Name>
+    <ProjectReference Include="..\Claim\02_Claims.csproj">
+      <Project>{ed25fc29-14fb-42cd-a04f-4d5d4aceff61}</Project>
+      <Name>02_Claims</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

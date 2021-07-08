@@ -6,10 +6,20 @@ using System.Threading.Tasks;
 
 namespace _01_Cafe
 {
-    class Menu
+    public class Menu
     {
-        static void Main(string[] args)
+        public int MealNumber { get; set; }
+        public string MealName { get; set; }
+        public string Description { get; set; }
+        public List<string> ListOfIngredients { get; set; }
+        public decimal Price { get; set; }
+        public Menu() { }
+        public Menu(int mealNumber, string mealName, string desc, decimal price)
         {
+            MealNumber = mealNumber;
+            MealName = mealName;
+            Description = desc;
+            Price = price;
         }
     }
 }
